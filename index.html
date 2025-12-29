@@ -2,157 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Living Room Restaurant & Bar</title>
+  <title>The Living Room | Restaurant & Bar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #1b1b1b;
-      color: #f5f5f5;
-      line-height: 1.6;
-    }
-
-    header {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      letter-spacing: 2px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    section {
-      padding: 80px 10%;
-    }
-
-    .about {
-      background-color: #222;
-    }
-
-    .about h2,
-    .menu h2,
-    .gallery h2,
-    .location h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .menu-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .menu-item {
-      background-color: #2c2c2c;
-      padding: 20px;
-      border-radius: 12px;
-    }
-
-    .menu-item h3 {
-      margin-top: 0;
-    }
-
-    .gallery-images {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .gallery-images img {
-      width: 100%;
-      border-radius: 12px;
-    }
-
-    .location iframe {
-      width: 100%;
-      height: 350px;
-      border-radius: 12px;
-      border: none;
-    }
-
-    footer {
-      background-color: #111;
-      padding: 40px;
-      text-align: center;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-  <div>
-    <h1>THE LIVING ROOM</h1>
-    <h5>Restaurant & Bar</h5>
-    <p>บริการอาหารและ เครื่องดื่ม</p>
+<header class="hero">
+  <div class="hero-content">
+    <h1 class="brand-title">
+      THE LIVING ROOM
+      <span class="brand-line"></span>
+    </h1>
+    <h2 class="brand-subtitle">Restaurant & Bar</h2>
+    <p class="brand-description">
+      A place where good food, crafted drinks and meaningful moments come together.
+    </p>
   </div>
 </header>
 
-<section class="about">
-  <h2>About Us</h2>
-  <p>
-    Living Room Restaurant & Bar เป็นพื้นที่รับประทานอาหารที่อบอุ่น ได้แรงบันดาลใจจากความอบอุ่นของห้องนั่งเล่น สถานที่ที่อาหารอร่อย เครื่องดื่มที่ปรุงอย่างพิถีพิถัน และการสนทนาที่มีความหมายมารวมกัน
+<section class="about" id="about">
+  <h2 class="section-title">About Us</h2>
+  <p class="section-text">
+    Living Room Restaurant & Bar is designed as a place of comfort —
+    where quality ingredients, thoughtful drinks and warm conversations naturally belong together.
   </p>
 </section>
 
-<section class="menu">
-  <h2>Our Menu</h2>
+<section class="menu" id="menu">
+  <h2 class="section-title">Our Menu</h2>
+
   <div class="menu-items">
     <div class="menu-item">
       <h3>Signature Pasta</h3>
-      <p>Homemade pasta with rich creamy sauce.</p>
+      <p>Handmade pasta with rich, balanced flavors.</p>
     </div>
+
     <div class="menu-item">
       <h3>Grilled Steak</h3>
-      <p>Premium cut, grilled to perfection.</p>
+      <p>Carefully selected cuts, grilled to bring out the best texture.</p>
     </div>
+
     <div class="menu-item">
       <h3>Classic Cocktails</h3>
-      <p>Old Fashioned, Negroni, and more.</p>
+      <p>Timeless recipes, crafted with precision.</p>
     </div>
   </div>
 </section>
 
-<section class="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery-images">
-    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" alt="Cocktail drink">
-    <img src="https://images.unsplash.com/photo-1510626176961-4b37d6af2a1a" alt="Bar drink">
-    <img src="https://images.unsplash.com/photo-1604908177522-4322f9b3b1d5" alt="Pasta dish">
-    <img src="https://images.unsplash.com/photo-1604908554027-0b1b4d8b8e91" alt="Steak dish">
-    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Rice dish">
+<section class="gallery" id="gallery">
+  <h2 class="section-title">Gallery</h2>
 
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+    <img src="https://images.unsplash.com/photo-1510626176961-4b37d6af2a1a">
+    <img src="https://images.unsplash.com/photo-1604908177522-4322f9b3b1d5">
+    <img src="https://images.unsplash.com/photo-1604908554027-0b1b4d8b8e91">
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
   </div>
 </section>
 
-<section class="location">
-  <h2>Location</h2>
-  <p>Open daily 17:00 – 24:00</p>
-  <iframe 
-    src="https://www.google.com/maps?q=Bangkok&output=embed">
-  </iframe>
+<section class="location" id="location">
+  <h2 class="section-title">Location</h2>
+  <p class="section-text">Open daily · 17:00 – 24:00</p>
+
+  <iframe src="https://www.google.com/maps?q=Bangkok&output=embed"></iframe>
 </section>
 
 <footer>
-  © 2025 Living Room Restaurant & Bar  
-  <br>
-  Instagram / Facebook / LINE
+  © 2025 The Living Room Restaurant & Bar<br>
+  Instagram · Facebook · LINE
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
