@@ -1,81 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>The Living Room | Restaurant & Bar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LIVINGROOM</title>
 
-  <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80") center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    opacity: .8;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    opacity: .8;
+    font-size: 16px;
+}
+
+/* ---------- SECTION ---------- */
+section {
+    padding: 100px 60px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+/* ---------- ABOUT ---------- */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.about p {
+    opacity: .8;
+    line-height: 1.8;
+}
+
+/* ---------- MENU ---------- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background: #161616;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.menu-item div {
+    padding: 20px;
+}
+
+.menu-item h4 {
+    font-weight: 500;
+}
+
+/* ---------- GALLERY ---------- */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    padding: 40px;
+    text-align: center;
+    opacity: .6;
+    font-size: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    .hero-text h2 {
+        font-size: 44px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 80px 30px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<header class="hero">
-  <div class="hero-content">
-    <h1 class="brand-title">
-      THE LIVING ROOM
-      <span class="brand-line"></span>
-    </h1>
-    <h2 class="brand-subtitle">Restaurant & Bar</h2>
-    <p class="brand-description">
-      A place where good food, crafted drinks and meaningful moments come together.
-    </p>
-  </div>
-</header>
+<!-- HERO -->
+<div class="hero">
+    <nav>
+        <h1>LIVINGROOM</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
 
-<section class="about" id="about">
-  <h2 class="section-title">About Us</h2>
-  <p class="section-text">
-    Living Room Restaurant & Bar is designed as a place of comfort —
-    where quality ingredients, thoughtful drinks and warm conversations naturally belong together.
-  </p>
+    <div class="hero-text">
+        <h2>Modern Dining<br>in a Cozy Space</h2>
+        <p>
+            LIVINGROOM is a place where food, drinks, and atmosphere blend into a relaxed
+            and stylish dining experience.
+        </p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="about">
+        <div>
+            <h3 class="section-title">About LIVINGROOM</h3>
+            <p>
+                Inspired by modern restaurant & bar culture, LIVINGROOM offers
+                carefully crafted dishes and drinks in a warm, intimate setting.
+                A place to unwind, connect, and enjoy quality moments.
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80">
+    </div>
 </section>
 
-<section class="menu" id="menu">
-  <h2 class="section-title">Our Menu</h2>
-
-  <div class="menu-items">
-    <div class="menu-item">
-      <h3>Signature Pasta</h3>
-      <p>Handmade pasta with rich, balanced flavors.</p>
+<!-- MENU -->
+<section id="menu">
+    <h3 class="section-title">Highlights</h3>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1604908554027-56e6a1e91e6e?auto=format&fit=crop&w=800&q=80">
+            <div><h4>Signature Dish</h4></div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80">
+            <div><h4>Chef Special</h4></div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80">
+            <div><h4>Craft Drinks</h4></div>
+        </div>
     </div>
-
-    <div class="menu-item">
-      <h3>Grilled Steak</h3>
-      <p>Carefully selected cuts, grilled to bring out the best texture.</p>
-    </div>
-
-    <div class="menu-item">
-      <h3>Classic Cocktails</h3>
-      <p>Timeless recipes, crafted with precision.</p>
-    </div>
-  </div>
 </section>
 
-<section class="gallery" id="gallery">
-  <h2 class="section-title">Gallery</h2>
-
-  <div class="gallery-grid">
-    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
-    <img src="https://images.unsplash.com/photo-1510626176961-4b37d6af2a1a">
-    <img src="https://images.unsplash.com/photo-1604908177522-4322f9b3b1d5">
-    <img src="https://images.unsplash.com/photo-1604908554027-0b1b4d8b8e91">
-    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
-  </div>
-</section>
-
-<section class="location" id="location">
-  <h2 class="section-title">Location</h2>
-  <p class="section-text">Open daily · 17:00 – 24:00</p>
-
-  <iframe src="https://www.google.com/maps?q=Bangkok&output=embed"></iframe>
+<!-- GALLERY -->
+<section id="gallery">
+    <h3 class="section-title">Atmosphere</h3>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80">
+    </div>
 </section>
 
 <footer>
-  © 2025 The Living Room Restaurant & Bar<br>
-  Instagram · Facebook · LINE
+    © 2025 LIVINGROOM — All rights reserved
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
